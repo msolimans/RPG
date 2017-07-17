@@ -1,4 +1,5 @@
-﻿using RPG.BLL.Geo;
+﻿using RPG.BLL.Creatures.Behaviours;
+using RPG.BLL.Geo;
 
 namespace RPG.BLL.Creatures
 {

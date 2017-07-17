@@ -1,4 +1,5 @@
 ﻿using System;
+using RPG.BLL.Creatures.Behaviours;
 
 namespace RPG.BLL.Creatures
 {

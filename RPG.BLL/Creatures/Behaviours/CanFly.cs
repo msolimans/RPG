@@ -1,4 +1,4 @@
-﻿namespace RPG.BLL.Creatures
+﻿namespace RPG.BLL.Creatures.Behaviours
 {
     public class CanFly: IFly
     {

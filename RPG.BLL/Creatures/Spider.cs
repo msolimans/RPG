@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Xml.Xsl.Runtime;
+using RPG.BLL.Creatures.Behaviours;
 
 namespace RPG.BLL.Creatures
 {

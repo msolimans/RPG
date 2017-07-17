@@ -39,13 +39,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Creatures\CanFly.cs" />
-    <Compile Include="Creatures\CanRun.cs" />
+    <Compile Include="Creatures\Behaviours\CanFly.cs" />
+    <Compile Include="Creatures\Behaviours\CanRun.cs" />
+    <Compile Include="Creatures\Behaviours\IFly.cs" />
+    <Compile Include="Creatures\Behaviours\IMonster.cs" />
+    <Compile Include="Creatures\Behaviours\IRun.cs" />
     <Compile Include="Creatures\Creature.cs" />
     <Compile Include="Creatures\Dragon.cs" />
-    <Compile Include="Creatures\IFly.cs" />
-    <Compile Include="Creatures\IMonster.cs" />
-    <Compile Include="Creatures\IRun.cs" />
     <Compile Include="Creatures\SavageAnimal.cs" />
     <Compile Include="Creatures\MonsterFactory.cs" />
     <Compile Include="Creatures\Player.cs" />
