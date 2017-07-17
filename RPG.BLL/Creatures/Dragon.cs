@@ -17,6 +17,8 @@ namespace RPG.BLL.Creatures
         
         public Dragon() : base(new Random().Next(100), $"Dragon {new Random().Next(100)}")
         {
+            SetFlyType(new CanFly());
+          
             
         }
         

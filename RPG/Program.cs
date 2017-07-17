@@ -18,7 +18,7 @@ namespace RPG
             SceneEngineer engineer = new SceneEngineer(builder);
             engineer.MakeScene();
             
-            //player should use move and hit using weapons
+            //player should use move and hit using weapons here
             
             
             

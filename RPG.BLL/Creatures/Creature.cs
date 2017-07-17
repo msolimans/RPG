@@ -4,6 +4,7 @@ namespace RPG.BLL.Creatures
 {
     public class Creature
     {
+        
         //All these info can be stored and persisted in NoSQL DBs (like MongoDB or DynamoDB) 
         public int Id { get; set; }
         public string Name { get; set; }
@@ -23,18 +24,49 @@ namespace RPG.BLL.Creatures
         public int ExperiencePoints { get; set; }
 
         
+        #region behaviours 
+        
+        public IFly FlytType;
+        public IRun RunType;
+
+        //change behavour at runtime
+        public void SetFlyType(IFly flyType)
+        {
+            FlytType = flyType;
+        }
+
+        public void Fly()
+        {
+            FlytType?.Fly();
+        }
+
+
+        public void setRunType(IRun runType)
+        {
+            RunType = runType;
+        }
+        
+        public void Run()
+        {
+            RunType?.Run();
+        }
+        
+        #endregion 
+        
+        #region Constructors
+        
         internal Creature()
         {
             
         }
 
-        public Creature(int id, string name)
+        internal Creature(int id, string name)
         {
             Id = id;
             Name = name;
 
         }
-        public Creature(int id, string name, int hitPointsToDie, int gold, int experiencePoints)
+        internal Creature(int id, string name, int hitPointsToDie, int gold, int experiencePoints)
         {
             Id = id;
             Name = name;
@@ -45,6 +77,9 @@ namespace RPG.BLL.Creatures
         }
 
 
+        #endregion
+        
+        
         //can be used for both player and monstr
         //player is attacking monster 
         //mnonster is attaching player

@@ -19,14 +19,22 @@ namespace RPG.BLL.Creatures
         public SavageAnimal(int id, string name, int hitPointsToDie, int gold, int experiencePoints) : base(id, name,
             hitPointsToDie, gold, experiencePoints)
         {
+       
+            setRunType(new CanRun());
         }
 
+        
         public SavageAnimal(int id, string name) : base(id, name)
         {
+          
+            setRunType(new CanRun());
+            
         }
 
         public SavageAnimal() : base(new Random().Next(100), $"Savage {new Random().Next(100)}")
         {
+          
+            setRunType(new CanRun());
             
         }
        
